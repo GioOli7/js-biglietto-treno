@@ -15,14 +15,14 @@ var scontoOver65 = 0.4;
 
 
 // CHIEDO KM DA PERCORRERE
-var kmViaggio = parseInt( prompt("Quanti chilometri deve percorrere") );
+var kmViaggio = parseInt( prompt("Quanti chilometri deve percorrere?") );
 // servirebbe un loop, ma non ci siamo ancora arrivati
 // se il dato non è numerico, faccio ripetere l'inserimento dati
 if (isNaN(kmViaggio) || kmViaggio < 0) {
     kmViaggio = parseInt( prompt("Inserire un dato numerico valido") );
 }
 document.getElementById('km-viaggio').innerHTML = kmViaggio + " km"; 
-console.log("Km da percorrere: ", kmViaggio);
+// console.log("Km da percorrere: ", kmViaggio);
 
 
 // CHIEDO ETÀ DEL PASSEGGERO
@@ -32,11 +32,13 @@ if (isNaN(age) || age < 0) {
     age = parseInt( prompt("Inserire un dato numerico valido") );
 }
 document.getElementById('age-passenger').innerHTML = age + " anni"; 
-console.log("Età del passeggero: ", age);
+// console.log("Età del passeggero: ", age);
 
 
 // CALCOLO PREZZO STANDARD
 var price = kmViaggio * priceKm;
+// console.log("Prezzo base: ", price);
+
 
 
 // APPORTO SCONTI SE NECESSARIO
@@ -46,20 +48,19 @@ if (age < 18) {
     var formatPrice = price.toFixed(2) + ' euro *';
     document.getElementById('prezzo-biglietto').innerHTML = formatPrice;
     document.getElementById('disclaimer').innerHTML = "* Under18: È stato applicato uno sconto del 20% sul prezzo del biglietto";
-
     // console.log("Prezzo scontato per Under18: ", price);
+
 } else if (age >= 65){
     price -= price * scontoOver65;
     // formatto l'output del prezzo
     var formatPrice = price.toFixed(2) + ' euro *';
     document.getElementById('prezzo-biglietto').innerHTML = formatPrice;
     document.getElementById('disclaimer').innerHTML = "* Over65: È stato applicato uno sconto del 40% sul prezzo del biglietto";
-
     // console.log("Prezzo scontato per Over65: ", price);
+    
 } else {
     // formatto l'output del prezzo
     var formatPrice = price.toFixed(2) + ' euro';
     document.getElementById('prezzo-biglietto').innerHTML = formatPrice;
-
     // console.log("Prezzo del biglietto standard: ", price);
 }
