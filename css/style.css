@@ -7,6 +7,8 @@
 body {
     font-family: sans-serif;
     height: 100vh;
+    background-image: url(../img/6108b580.jpg);
+    background-size: cover;
 }
 
 .flex {
@@ -26,14 +28,36 @@ body {
     justify-content: center;
 }
 
+.flex_justify-space-betw {
+    justify-content: space-between;
+}
+
 .dati_viaggio {
-    height: 50%;
+    height: 350px;
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 3px solid red;
+    border-radius: 0 30px 0 30px;
 }
 
 .dati_viaggio-item {
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
+}
+
+.dati_viaggio-item .title {
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+}
+
+.dati_viaggio-item .result {
+    color: #9b0000;
 }
 
 #disclaimer {
     font-size: 12px;
+    color: darkred;
+    background-color: rgba(255, 255, 255, 0.7);
+    margin-top: 10px;
+    padding: 5px;
+    border: 1px solid lightgray;
 }

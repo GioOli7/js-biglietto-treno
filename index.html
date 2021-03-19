@@ -8,30 +8,30 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
 </head>
-<body class="flex flex_align-cen flex_justify-cen">
+<body class="flex-col flex_align-cen flex_justify-cen">
 
     <!-- Container dati viaggio -->
-    <div class="dati_viaggio flex-col flex_justify-cen">
+    <div class="dati_viaggio flex-col flex_justify-space-betw">
 
         <!-- Dati viaggio: chilometri -->
         <div class="dati_viaggio-item flex-col flex_align-cen flex_justify-cen">
-            <h3>Lunghezza del suo viaggio:</h3>
-            <h2 id="km-viaggio">A</h2>
+            <h3 class="title">LUNGHEZZA DEL SUO VIAGGIO:</h3>
+            <h2 class="result" id="km-viaggio">154 Km</h2>
         </div>
 
         <!-- Dati viaggio: età -->
         <div class="dati_viaggio-item flex-col flex_align-cen flex_justify-cen">
-            <h3>La sua età:</h3>
-            <h2 id="age-passenger">B</h2>
+            <h3 class="title">LA SUA ETÀ:</h3>
+            <h2 class="result" id="age-passenger">20 anni</h2>
         </div>
 
         <!-- Dati viaggio: prezzo -->
         <div class="dati_viaggio-item flex-col flex_align-cen flex_justify-cen">
-            <h3>Il prezzo del suo biglietto è</h3>
-            <h2 id="prezzo-biglietto">C</h2>
+            <h3 class="title">IL PREZZO DEL SUO BIGLIETTO È</h3>
+            <h2 class="result" id="prezzo-biglietto">152 euro</h2>
         </div>
-        <p id="disclaimer"></p>
     </div>
+    <p id="disclaimer"></p>
     
 
     <script src="./js/script.js"></script>
