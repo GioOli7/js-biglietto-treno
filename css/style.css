@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    height: 100vh;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex_align-cen {
+    align-items: center;
+}
+
+.flex_justify-cen {
+    justify-content: center;
+}
+
+.dati_viaggio {
+    height: 50%;
+}
+
+.dati_viaggio-item {
+    margin-bottom: 40px;
+}
+
+#disclaimer {
+    font-size: 12px;
+}

@@ -4,12 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Style -->
+    <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
 </head>
-<body>
-    <h2 id="km-viaggio"></h2>
-    <h2 id="age-passenger"></h2>
-    <h2 id="prezzo-biglietto"></h2>
+<body class="flex flex_align-cen flex_justify-cen">
+
+    <!-- Container dati viaggio -->
+    <div class="dati_viaggio flex-col flex_justify-cen">
+
+        <!-- Dati viaggio: chilometri -->
+        <div class="dati_viaggio-item flex-col flex_align-cen flex_justify-cen">
+            <h3>Lunghezza del suo viaggio:</h3>
+            <h2 id="km-viaggio">A</h2>
+        </div>
+
+        <!-- Dati viaggio: età -->
+        <div class="dati_viaggio-item flex-col flex_align-cen flex_justify-cen">
+            <h3>La sua età:</h3>
+            <h2 id="age-passenger">B</h2>
+        </div>
+
+        <!-- Dati viaggio: prezzo -->
+        <div class="dati_viaggio-item flex-col flex_align-cen flex_justify-cen">
+            <h3>Il prezzo del suo biglietto è</h3>
+            <h2 id="prezzo-biglietto">C</h2>
+        </div>
+        <p id="disclaimer"></p>
+    </div>
     
 
     <script src="./js/script.js"></script>
